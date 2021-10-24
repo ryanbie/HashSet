@@ -1,0 +1,32 @@
+import java.util.HashSet;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// single place to store values, set of data
+
+        HashSet<String> h = new HashSet<String>();
+        h.add("Lemons");
+        h.add("Oranges");
+        h.add("Apples");
+        h.add("Grapes");
+
+        System.out.println(h.size());
+
+        System.out.println(h.contains("Lemons"));
+        System.out.println(h.contains("Watermelons"));
+
+        System.out.println(h);
+
+        h.remove("Oranges");
+
+        System.out.println(h);
+
+        h.clear();
+
+        /*
+        HashSet is a set, e.g. {1, 2, 3, 4, 5, 6, 7},
+        HashMap is a key -> value pair(key to value) map, e.g. {a -> 1, b -> 2, c -> 2, d -> 1}
+         */
+    }
+}
